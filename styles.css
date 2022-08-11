@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'jackson-porter';
+    src: url(fonts/Storystone.ttf);
+}
+
+body {
+    background: url(./pen.jpg);
+    background-size: cover;
+}
+
+main {
+    font-family: 'jackson-porter', sans-serif;
+}
+
+.big-text {
+    position: absolute;
+    display: inline;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    color: #E1B863;
+}
+
+.small-text {
+    position: absolute;
+    display: inline;
+    text-align: center;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: xx-large;
+    color: #E1B863;
+}
