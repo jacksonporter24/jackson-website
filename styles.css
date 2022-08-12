@@ -4,17 +4,22 @@
     box-sizing: border-box;
 }
 
+/* FONT */
+
 @font-face {
     font-family: 'jackson-porter';
     src: url(fonts/Storystone.ttf);
 }
 
-body {
-    background: url(./pen.jpg);
-    background-size: cover;
+.start-page {
+    font-family: 'jackson-porter', sans-serif;
 }
 
-main {
+.about-page {
+    font-family: 'jackson-porter', sans-serif;
+}
+
+.contact-page {
     font-family: 'jackson-porter', sans-serif;
 }
 
@@ -22,7 +27,7 @@ main {
     position: absolute;
     display: inline;
     text-align: center;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: 5rem;
@@ -33,9 +38,85 @@ main {
     position: absolute;
     display: inline;
     text-align: center;
-    top: 53%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: xx-large;
     color: #E1B863;
+}
+
+.about-page-font {
+    position: absolute;
+    display: inline;
+    text-align: center;
+    top: 17%;
+    left: 36.5%;
+    transform: translate(-50%, -30%);
+    font-size: 2.5rem;
+    color: #E1B863;
+}
+
+.about-page-font-small {
+    font-family: 'georgia';
+    width: 60%;
+    border: 10px solid #E1B863;
+    padding: 20px;
+    margin: 10px;
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    transform: translate(-50%, -30%);
+    font-size: 1rem;
+    color: black;
+    
+}
+
+section {
+    height: 100vh;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.section-one {
+    background: url(./pen.jpg);
+    background-size: cover;
+}
+
+.section-two {
+    background: #DEE2E1;
+    background-size: cover;
+}
+
+.section-three {
+    background: url(./contact-img.jpeg);
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem;
+}
+
+.image {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    right: 0%;
+    left: 67%
 }
